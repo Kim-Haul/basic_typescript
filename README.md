@@ -1,46 +1,28 @@
-# Getting Started with Create React App
+![img](./public/logo.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- create-react-app my_app --template typescript
+- settings.json에 타입스크립트 prettier 설정 추가
+- 코드 안정성을 위해 plain react에서 typescript로 확장 필요성 ?
+- @types/styled-components 추가 설치 필요
 
-## Available Scripts
+```
+사내에서 진행중인 프로젝트의 기획안과 디자인이 새로 나오는 동안에
+잠시 시간이 나서 TypeScript를 진짜 맛만 봤다.
 
-In the project directory, you can run:
+동적 타입의 인터프리어 언어인 자바스크립트와
+정적 타입의 컴파일언어 타입스크립트.
 
-### `npm start`
+코드 작성 단계에서 타입을 체크해 오류를 확인할 수 있고,
+미리 타입을 결정한다는 점에서 코드 안정성이 늘어나는 것 같긴하지만
+매번 타입을 결정해야한다는게 조금은 번거로웠다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+최근들어 부쩍 plain react로만 코드를 짜다보니 조금은
+지루한 느낌이 들기 시작했는데 새로운 언어를 접하니 갑자기 활력이 생김.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+사실, 개발 초기단계부터 내가 참여하는 프로젝트에 있어서는
+굳이 ts를 사용하지 않아도 되겠다라는 생각이 들지만
+남의 프로젝트를 중간에 건내 받았을때는 ts같은 타입지표가 있는게
+든든할 것 같다고도 어렴풋이 생각이 듦.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+결국에는 유지보수 관점에서 ts는 유리한건가?
+```
